@@ -1,8 +1,10 @@
+const chalk = require('chalk');
 const express = require('express');
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/Images', express.static(__dirname + '/Images'));
+app.use('/js', express.static(__dirname + '/public/js'));
 app.set('view engine', 'ejs');
 
 let summonerSpellsArray = ['Heal', 'Flash', 'Teleport', 'Smite', 'Cleanse', 'Ignite', 'Ghost', 'Barrier', 'Exhaust', 'Mark', 'Clarity'];
@@ -35,5 +37,5 @@ app.post('/', (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log('Web Server Started');
+    console.log(chalk.bgBlue.bold(`Web Server Started: http://localhost`));
 });
