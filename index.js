@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const express = require('express');
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -35,5 +36,5 @@ app.post('/', (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log(`Web Server Started: http://localhost`);
+    console.log(chalk.bgBlue.bold(`Web Server Started: http://localhost`));
 });
