@@ -1,0 +1,16 @@
+Make option to click either Summoners rift / ARAM (Allows Mark spell from aram to be in random roll)
+Make a visual with all summoner spells, summoner spells will be greyed out if they are not in the -
+random roll, user can click on the spells physically to add / remove spells
+
+function imageOnClick(){
+    count++
+    if(count % 2 == 0){
+        //Apply Greyscale
+        //Remove spell from array
+    }
+    else{
+        //Give color back to photo
+        //Add spell back to array
+    }
+    
+}
