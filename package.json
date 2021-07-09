@@ -12,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "server": "nodemon website-fuckaround.js"
+    "start": "node .",
+    "server": "nodemon ."
   },
   "keywords": [],
   "author": "",

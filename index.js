@@ -35,5 +35,5 @@ app.post('/', (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log('Web Server Started');
+    console.log(`Web Server Started: http://localhost`);
 });
