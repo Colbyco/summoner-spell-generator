@@ -37,5 +37,5 @@ app.post('/', (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log(chalk.bgBlue.bold(`Web Server Started: http://localhost`));
+    console.log(chalk.bgBlue.bold(`Web Server Started: http://mrmouton.gay`));
 });
