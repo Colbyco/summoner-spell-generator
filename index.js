@@ -4,6 +4,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/Images', express.static(__dirname + '/Images'));
+app.use('/js', express.static(__dirname + '/public/js'));
 app.set('view engine', 'ejs');
 
 let summonerSpellsArray = ['Heal', 'Flash', 'Teleport', 'Smite', 'Cleanse', 'Ignite', 'Ghost', 'Barrier', 'Exhaust', 'Mark', 'Clarity'];
