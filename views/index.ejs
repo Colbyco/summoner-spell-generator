@@ -30,10 +30,10 @@
       <img id="spell-2" src="Images/<%=spells[1]%>.png" alt="random summoner spell" class="rounded" />
     </div>
     <div class="text-center padding">
-      <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked />
+      <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked  onclick="changeMapMode('SR')" />
       <label class="btn btn-outline-primary" for="success-outlined">Summoner's Rift</label>
 
-      <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" />
+      <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" onclick="changeMapMode('ARAM')" />
       <label class="btn btn-outline-primary" for="danger-outlined">ARAM</label>
     </div>
     <br />
@@ -45,7 +45,7 @@
         <div class="col"><img img id="Ignite" src="Images/Ignite.png" onclick="toggleSpell('Ignite')" alt="random summoner spell" /></div>
         <div class="col"><img img id="Teleport" src="Images/Teleport.png" onclick="toggleSpell('Teleport')" alt="random summoner spell" /></div>
         <div class="col"><img img id="Smite" src="Images/Smite.png" onclick="toggleSpell('Smite')" alt="random summoner spell" /></div>
-        <div class="col"><img img id="Mark" src="Images/Mark.png" onclick="toggleSpell('Mark')" alt="random summoner spell" /></div>
+        <div class="col"><img img id="Mark" style="filter: grayscale(100%)" src="Images/Mark.png" onclick="toggleSpell('Mark')" alt="random summoner spell" /></div>
         <div class="col"><img img id="Exhaust" src="Images/Exhaust.png" onclick="toggleSpell('Exhaust')" alt="random summoner spell" /></div>
         <div class="col"><img img id="Clarity" src="Images/Clarity.png" onclick="toggleSpell('Clarity')" alt="random summoner spell" /></div>
         <div class="col"><img img id="Heal" src="Images/Heal.png" onclick="toggleSpell('Heal')" alt="random summoner spell" /></div>
