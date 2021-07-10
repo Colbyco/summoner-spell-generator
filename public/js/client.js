@@ -106,5 +106,10 @@ function changeMapMode(mode) {
     if (mode === 'SR' && spells.Mark) {
         toggleSpell('Mark')
     }
+
     currentMapMode = mode;
+
+    if (mode === "ARAM" && !spells.Mark) {
+        toggleSpell('Mark')
+    }
 }
