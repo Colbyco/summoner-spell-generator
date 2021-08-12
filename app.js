@@ -36,6 +36,6 @@ app.post('/', (req, res) => {
     return res.render('index');
 });
 
-app.listen(80, () => {
+app.listen(process.env.PORT || 80, () => {
     console.log(chalk.bgBlue.bold(`Web Server Started: http://localhost`));
 });
