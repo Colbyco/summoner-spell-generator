@@ -7,7 +7,7 @@ app.use('/Images', express.static(__dirname + '/Images'));
 app.use('/js', express.static(__dirname + '/public/js'));
 app.set('view engine', 'ejs');
 
-let summonerSpellsArray = ['Heal', 'Flash', 'Teleport', 'Smite', 'Cleanse', 'Ignite', 'Ghost', 'Barrier', 'Exhaust', 'Mark', 'Clarity'];
+let summonerSpellsArray = ['Heal', 'Flash', 'Teleport', 'Smite', 'Cleanse', 'Ignite', 'Ghost', 'Barrier', 'Exhaust', 'Clarity'];
 
 let lengthOfArray = summonerSpellsArray.length;
 
